@@ -1,0 +1,33 @@
+$primary-Cyan: hsl(179, 62%, 43%);
+$primary-Bright-Yellow: hsl(71, 73%, 54%);
+$neutral-Light-Gray: hsl(204, 43%, 93%);
+$neutral-Grayish-Blue: hsl(218, 22%, 67%);
+
+*{
+   margin: 0;
+   padding: 0;
+}
+html{
+   font-size: 62.5%;
+}
+.content-container{
+   width: 80%;
+   margin: 0 auto;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: start;
+   height: 120px;
+   padding: 30px;
+
+   h2{
+      text-align: left;
+      font-family: 'Karla', sans-serif;
+      font-size: 1.6rem;
+      color: $primary-Cyan;
+   }
+   h3{
+      @extend h2;
+      color: $primary-Bright-Yellow
+   }
+}
