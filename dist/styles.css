@@ -12,20 +12,23 @@ html {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: start;
+  justify-content: flex-start;
+  align-items: center;
   height: 120px;
-  padding-bottom: 80px;
+  padding-bottom: 110px;
+  padding-top: 10px;
+  background-color: darkgrey;
+  border-radius: 10px;
 }
 .content-container h2, .content-container h3, .content-container article {
   text-align: left;
   font-family: "Karla", sans-serif;
   font-size: 1.6rem;
-  color: #2ab2af;
+  color: #2F4F4F;
   padding: 7px;
 }
 .content-container h3, .content-container article {
-  color: #c0df34;
+  color: #808000;
 }
 .content-container article {
   color: #858585;
@@ -48,14 +51,15 @@ html {
 }
 
 .Subscription-container {
-  height: 100%;
-  width: 100%;
+  height: 180px;
+  width: 80%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: left;
-  background-color: #2ab2af;
+  text-align: center;
+  background-color: #2F4F4F;
 }
 .Subscription-container h3, .Subscription-container .content-container article, .content-container .Subscription-container article {
   font-size: 1.6rem;
@@ -64,6 +68,7 @@ html {
 .Subscription-container p {
   font-weight: 700;
   font-size: 1.5rem;
+  color: #e5eff5;
 }
 .Subscription-container .price {
   font-size: 1.8rem;
@@ -71,4 +76,16 @@ html {
 }
 .Subscription-container .price-frase {
   color: #858585;
+}
+.Subscription-container .button-p {
+  font-size: 1.6rem;
+  background-color: #808000;
+  width: 40vw;
+  padding: 20px;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+}
+.Subscription-container .button-p:hover {
+  transform: scale(1.1);
 }
