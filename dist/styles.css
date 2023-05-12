@@ -15,14 +15,60 @@ html {
   justify-content: space-between;
   align-items: start;
   height: 120px;
-  padding: 30px;
+  padding-bottom: 80px;
 }
-.content-container h2, .content-container h3 {
+.content-container h2, .content-container h3, .content-container article {
   text-align: left;
   font-family: "Karla", sans-serif;
   font-size: 1.6rem;
   color: #2ab2af;
+  padding: 7px;
 }
-.content-container h3 {
+.content-container h3, .content-container article {
   color: #c0df34;
+}
+.content-container article {
+  color: #858585;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 2fr;
+  height: 100%;
+  width: 100%;
+}
+.wrapper .Subscription-section {
+  grid-row: 1;
+}
+.wrapper .Why-Us-section {
+  grid-row: 2;
+}
+
+.Subscription-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  background-color: #2ab2af;
+}
+.Subscription-container h3, .Subscription-container .content-container article, .content-container .Subscription-container article {
+  font-size: 1.6rem;
+  color: #e5eff5;
+}
+.Subscription-container p {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.Subscription-container .price {
+  font-size: 1.8rem;
+  color: #e5eff5;
+}
+.Subscription-container .price-frase {
+  color: #858585;
 }
