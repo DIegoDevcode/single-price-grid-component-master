@@ -7,105 +7,220 @@ html {
   font-size: 62.5%;
 }
 
-.content-container {
-  width: 74%;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-  height: 120px;
-  padding-bottom: 90px;
-  padding-top: 10px;
-  background-color: white;
-  border-radius: 20px;
-  box-shadow: 20px;
-}
-.content-container h2, .content-container h3, .content-container article {
-  text-align: left;
+body {
   font-family: "Karla", sans-serif;
-  font-size: 1.6rem;
-  color: #2ab2af;
-  padding: 7px;
-}
-.content-container h3, .content-container article {
-  color: #c0df34;
-}
-.content-container article {
-  color: #98a6bd;
-  font-size: 1.6rem;
-  font-weight: 700;
-  line-height: 1.4;
 }
 
-.wrapper {
-  display: grid;
-  grid-template-columns: 2fr;
-  height: 100%;
-  width: 100%;
-}
-.wrapper .Subscription-section {
-  grid-row: 1;
-}
-.wrapper .Why-Us-section {
-  grid-row: 2;
-}
+@media only screen and (min-width: 180px) and (max-width: 680px) {
+  .content-container {
+    width: 74%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    height: 120px;
+    padding-bottom: 90px;
+    padding-top: 10px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 20px;
+  }
+  .content-container h2 {
+    font-size: 1.6rem;
+    color: #2ab2af;
+    padding: 7px;
+  }
+  .content-container h3 {
+    font-size: 1.6rem;
+    color: #c0df34;
+    padding: 7px;
+  }
+  .content-container article {
+    color: #98a6bd;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.4;
+  }
 
-.Subscription-container, .why-us-container {
-  height: 210px;
-  width: 75%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: left;
-  background-color: #2ab2af;
-}
-.Subscription-container h3, .why-us-container h3, .why-us-container .content-container article, .content-container .why-us-container article, .Subscription-container .content-container article, .content-container .Subscription-container article {
-  font-size: 1.6rem;
-  color: #e5eff5;
-  padding-top: 10px;
-  margin: 10px;
-}
-.Subscription-container p, .why-us-container p {
-  font-weight: bold;
-  font-size: 1.5rem;
-  color: #a6ebed;
-  padding-bottom: 20px;
-  margin: 5px;
-  padding-left: 10px;
-}
-.Subscription-container .price, .why-us-container .price {
-  font-size: 2.2rem;
-  color: #e5eff5;
-}
-.Subscription-container .price-frase, .why-us-container .price-frase {
-  color: #e5eff5;
-  font-weight: bold;
-}
-.Subscription-container .button-p, .why-us-container .button-p {
-  font-size: 1.6rem;
-  background-color: #c0df34;
-  width: 55vw;
-  padding: 15px;
-  color: white;
-  margin: 0 auto;
-  text-align: center;
-}
-.Subscription-container .button-p:hover, .why-us-container .button-p:hover {
-  transform: scale(1.1);
-}
+  .Subscription-container {
+    height: 220px;
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    background-color: #2ab2af;
+  }
+  .Subscription-container h3 {
+    font-size: 1.6rem;
+    color: #e5eff5;
+    padding-top: 10px;
+    margin: 10px;
+  }
+  .Subscription-container p {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #a6ebed;
+    padding-bottom: 20px;
+    margin: 5px;
+    padding-left: 10px;
+  }
+  .Subscription-container .price {
+    font-size: 2.2rem;
+    color: #e5eff5;
+  }
+  .Subscription-container .price-frase {
+    color: #e5eff5;
+    font-weight: bold;
+  }
+  .Subscription-container .button-p {
+    font-size: 1.6rem;
+    background-color: #c0df34;
+    width: 55vw;
+    padding: 15px;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .Subscription-container .button-p:hover {
+    transform: scale(1.1);
+  }
 
-.why-us-container {
-  background-color: #4abebd;
-}
-.why-us-container article {
-  margin: 10px;
-  color: #a6ebed;
-}
+  .why-us-container {
+    height: 380px;
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    background-color: #4abebd;
+  }
+  .why-us-container h3 {
+    font-size: 1.6rem;
+    color: #e5eff5;
+    padding-top: 5px;
+    margin: 10px;
+  }
+  .why-us-container article {
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 10px;
+    color: #a6ebed;
+    font-size: 1.7rem;
+  }
 
-footer {
-  padding: 30px;
-  margin-top: 20px;
-  font-size: 1.4rem;
+  footer {
+    padding: 30px;
+    margin-top: 20px;
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (min-width: 680px) and (max-width: 1920px) {
+  .content-container {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 120px;
+    padding-bottom: 90px;
+    padding-top: 10px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 20px;
+  }
+  .content-container h2 {
+    font-size: 1.6rem;
+    color: #2ab2af;
+    padding: 7px;
+    padding-left: 3px;
+  }
+  .content-container h3 {
+    font-size: 1.6rem;
+    color: #c0df34;
+    padding: 2px;
+    padding-left: 3px;
+  }
+  .content-container article {
+    color: #98a6bd;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 2px;
+  }
+
+  .Subscription-container {
+    height: 230px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #2ab2af;
+  }
+  .Subscription-container h3 {
+    font-size: 1.6rem;
+    color: #e5eff5;
+    padding-top: 10px;
+    margin: 10px;
+  }
+  .Subscription-container p {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #a6ebed;
+    padding-bottom: 20px;
+    margin: 5px;
+    padding-left: 10px;
+  }
+  .Subscription-container .price {
+    font-size: 2.2rem;
+    color: #e5eff5;
+  }
+  .Subscription-container .price-frase {
+    color: #e5eff5;
+    font-weight: bold;
+  }
+  .Subscription-container .button-p {
+    font-size: 1.6rem;
+    background-color: #c0df34;
+    width: 19vw;
+    padding: 15px;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .Subscription-container .button-p:hover {
+    transform: scale(1.1);
+  }
+
+  .why-us-container {
+    height: 230px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: flex-start;
+    background-color: #4abebd;
+  }
+  .why-us-container h3 {
+    font-size: 1.6rem;
+    color: #e5eff5;
+    padding-top: 10px;
+    margin: 10px;
+  }
+  .why-us-container article {
+    font-weight: 700;
+    line-height: 0.6;
+    margin: 10px;
+    color: #a6ebed;
+    font-size: 1.7rem;
+  }
 }

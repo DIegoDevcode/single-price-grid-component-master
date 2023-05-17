@@ -1,10 +1,11 @@
 $primary-Cyan: hsl(179, 62%, 43%);
-$primary-Bright-Yellow:hsl(71, 73%, 54%);
+$primary-Bright-Yellow: hsl(71, 73%, 54%);
 $neutral-Light-Gray: hsl(204, 43%, 93%);
-$neutral-Grayish-Blue:  hsl(218, 22%, 67%);
-$font-size-title:1.6rem;
+$neutral-Grayish-Blue: hsl(218, 22%, 67%);
+$font-size-title: 1.6rem;
 $color-text-secondary: #a6ebed;
 $background-color-secondary: #4abebd;
+
 * {
    margin: 0;
    padding: 0;
@@ -14,6 +15,13 @@ html {
    font-size: 62.5%;
 }
 
+body{
+   font-family: 'Karla', sans-serif;
+   //width: 100%;
+}
+
+
+@media only screen and (min-width: 180px)and (max-width: 680px) {
 .content-container {
    width: 74%;
    margin: 0 auto;
@@ -27,21 +35,142 @@ html {
    background-color: white;
    border-radius: 20px;
    box-shadow: 20px;
+
    h2 {
-      text-align: left;
-      font-family: 'Karla', sans-serif;
       font-size: $font-size-title;
       color: $primary-Cyan;
       padding: 7px;
    }
 
    h3 {
-      @extend h2;
-      color: $primary-Bright-Yellow
+      font-size: $font-size-title;
+      color: $primary-Bright-Yellow;
+      padding: 7px;
    }
 
    article {
-      @extend h3;
+      color: $neutral-Grayish-Blue;
+      font-size: 1.6rem;
+      font-weight: 700;
+      line-height: 1.4;
+   }
+}
+
+
+
+.Subscription-container {
+   height: 220px;
+   width: 75%;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: left;
+   background-color: $primary-Cyan;
+
+   h3 {
+      font-size: $font-size-title;
+      color: $neutral-Light-Gray;
+      padding-top: 10px;
+      margin: 10px;
+   }
+
+   p {
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: $color-text-secondary;
+      padding-bottom: 20px;
+      margin: 5px;
+      padding-left: 10px;
+   }
+
+   .price {
+      font-size: 2.2rem;
+      color: $neutral-Light-Gray;
+   }
+
+   .price-frase {
+      color: $neutral-Light-Gray;
+      font-weight: bold;
+   }
+
+   .button-p {
+      font-size: 1.6rem;
+      background-color: $primary-Bright-Yellow;
+      width: 55vw;
+      padding: 15px;
+      color: white;
+      margin: 0 auto;
+      text-align: center;
+
+      &:hover {
+         transform: scale(1.1);
+      }
+   }
+}
+
+.why-us-container {
+   height: 380px;
+   width: 75%;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: left;
+   background-color: $background-color-secondary;
+
+   h3 {
+      font-size: $font-size-title;
+      color: $neutral-Light-Gray;
+      padding-top: 5px;
+      margin: 10px;
+   }
+
+   article {
+      font-weight: 700;
+      line-height: 1.1;
+      margin: 10px;
+      color: $color-text-secondary;
+      font-size: 1.7rem
+   }
+}
+
+;
+
+footer {
+   padding: 30px;
+   margin-top: 20px;
+   font-size: 1.4rem;
+   }
+}
+
+@media only screen and (min-width: 680px)and (max-width: 1920px) {
+   .content-container {
+   width: 50%;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;  
+   justify-content: flex-start;
+   align-items:  flex-start;
+   height: 120px;
+   padding-bottom: 90px;
+   padding-top: 10px;
+   background-color: white;
+   border-radius: 20px;
+   box-shadow: 20px;
+   h2 {
+      font-size: $font-size-title;
+      color: $primary-Cyan;
+      padding: 7px;
+      padding-left: 3px;
+   }
+   h3 {
+      font-size: $font-size-title;
+      color: $primary-Bright-Yellow;
+      padding: 2px;
+      padding-left: 3px;
+   }
+   article {
       color: $neutral-Grayish-Blue;
       font-size: 1.6rem;
       font-weight: 700;
@@ -51,81 +180,81 @@ html {
 
 .wrapper {
    display: grid;
-   grid-template-columns: 2fr;
-   height: 100%;
-   width: 100%;
-
-   .Subscription-section {
-      grid-row: 1;
-   }
-   
-   .Why-Us-section {
-      grid-row: 2;
-   }
+   grid-template-columns: 50% 50%;
+   column-gap: 2px;
 }
 
 .Subscription-container{
-   height: 210px;
-   width: 75%;
-   margin: 0 auto;
+   height: 230px;
+   width: 50%;
    display: flex;
    flex-direction: column;
-   justify-content: center;
-   text-align: left;
+   justify-content: flex-start;
+   align-items:  flex-start;
    background-color: $primary-Cyan;
-      h3{
-         font-size: $font-size-title;
-         color: $neutral-Light-Gray;
-         padding-top: 10px;
-         margin: 10px;
-      }
-      p{
-         font-weight: bold;
-         font-size: 1.5rem;
-         color: $color-text-secondary;
-         padding-bottom: 20px;
-         margin: 5px;
-         padding-left: 10px;
-      }
-      .price{
-         font-size: 2.2rem;
-         color:$neutral-Light-Gray;
-      }
-      .price-frase{
-         color: $neutral-Light-Gray;
-         font-weight: bold;
-      }
-
-      .button-p {
-         font-size: 1.6rem;
-         background-color: $primary-Bright-Yellow;
-         width: 55vw;
-         padding: 15px;
-         color: white;
-         margin: 0 auto;
-         text-align: center;
-
-         &:hover {
-            transform: scale(1.1);
-         }
-      }
-      }
-.why-us-container{
-   @extend .Subscription-container;
-   background-color: $background-color-secondary;
-   h3{
-   @extend h3
+   h3 {
+      font-size: $font-size-title;
+      color: $neutral-Light-Gray;
+      padding-top: 10px;
+      margin: 10px;
    }
-   article{
-   @extend article;
-   margin: 10px;
-   color: $color-text-secondary
-   }
-};
 
-footer{
-   padding: 30px;
-   margin-top: 20px;
-   font-size: 1.4rem;
+   p {
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: $color-text-secondary;
+      padding-bottom: 20px;
+      margin: 5px;
+      padding-left: 10px;
+   }
+
+   .price {
+      font-size: 2.2rem;
+      color: $neutral-Light-Gray;
+   }
+
+   .price-frase {
+      color: $neutral-Light-Gray;
+      font-weight: bold;
+   }
+
+   .button-p {
+      font-size: 1.6rem;
+      background-color: $primary-Bright-Yellow;
+      width: 19vw;
+      padding: 15px;
+      color: white;
+      margin: 0 auto;
+      text-align: center;
+
+      &:hover {
+         transform: scale(1.1);
+      }
+   }
+   
 }
 
+.why-us-container {
+   height: 230px;
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   text-align: flex-start;
+   background-color: $background-color-secondary;
+
+   h3 {
+      font-size: $font-size-title;
+      color: $neutral-Light-Gray;
+      padding-top: 10px;
+      margin: 10px;
+   }
+
+   article {
+      font-weight: 700;
+      line-height: 0.6;
+      margin: 10px;
+      color: $color-text-secondary;
+      font-size: 1.7rem
+   }
+}
+}
