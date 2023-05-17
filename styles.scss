@@ -1,8 +1,10 @@
 $primary-Cyan: hsl(179, 62%, 43%);
 $primary-Bright-Yellow:hsl(71, 73%, 54%);
 $neutral-Light-Gray: hsl(204, 43%, 93%);
-$neutral-Grayish-Blue: hsl(218, 22%, 67%);
+$neutral-Grayish-Blue:  hsl(218, 22%, 67%);
 $font-size-title:1.6rem;
+$color-text-secondary: #a6ebed;
+$background-color-secondary: #4abebd;
 * {
    margin: 0;
    padding: 0;
@@ -20,10 +22,11 @@ html {
    justify-content: flex-start;
    align-items: center;
    height: 120px;
-   padding-bottom: 70px;
+   padding-bottom: 90px;
    padding-top: 10px;
    background-color: white;
-   border-radius: 10px;
+   border-radius: 20px;
+   box-shadow: 20px;
    h2 {
       text-align: left;
       font-family: 'Karla', sans-serif;
@@ -61,20 +64,15 @@ html {
    }
 }
 
-.Subscription-section{
-   padding: 20px;
-}
-
 .Subscription-container{
    height: 210px;
-   width: 80%;
+   width: 75%;
    margin: 0 auto;
    display: flex;
    flex-direction: column;
    justify-content: center;
    text-align: left;
    background-color: $primary-Cyan;
-   border-radius: 10px;
       h3{
          font-size: $font-size-title;
          color: $neutral-Light-Gray;
@@ -82,9 +80,9 @@ html {
          margin: 10px;
       }
       p{
-         font-weight: 700;
+         font-weight: bold;
          font-size: 1.5rem;
-         color: $neutral-Light-Gray;
+         color: $color-text-secondary;
          padding-bottom: 20px;
          margin: 5px;
          padding-left: 10px;
@@ -94,13 +92,14 @@ html {
          color:$neutral-Light-Gray;
       }
       .price-frase{
-         color: $neutral-Grayish-Blue;
+         color: $neutral-Light-Gray;
+         font-weight: bold;
       }
 
       .button-p {
          font-size: 1.6rem;
          background-color: $primary-Bright-Yellow;
-         width: 40vw;
+         width: 55vw;
          padding: 15px;
          color: white;
          margin: 0 auto;
@@ -111,17 +110,22 @@ html {
          }
       }
       }
-.Why-Us-section{
-   padding: 20px;
-}
 .why-us-container{
    @extend .Subscription-container;
+   background-color: $background-color-secondary;
    h3{
    @extend h3
    }
    article{
    @extend article;
    margin: 10px;
-   color: white
+   color: $color-text-secondary
    }
 };
+
+footer{
+   padding: 30px;
+   margin-top: 20px;
+   font-size: 1.4rem;
+}
+

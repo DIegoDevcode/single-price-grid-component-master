@@ -15,10 +15,11 @@ html {
   justify-content: flex-start;
   align-items: center;
   height: 120px;
-  padding-bottom: 70px;
+  padding-bottom: 90px;
   padding-top: 10px;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 20px;
+  box-shadow: 20px;
 }
 .content-container h2, .content-container h3, .content-container article {
   text-align: left;
@@ -50,20 +51,15 @@ html {
   grid-row: 2;
 }
 
-.Subscription-section {
-  padding: 20px;
-}
-
 .Subscription-container, .why-us-container {
   height: 210px;
-  width: 80%;
+  width: 75%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: left;
   background-color: #2ab2af;
-  border-radius: 10px;
 }
 .Subscription-container h3, .why-us-container h3, .why-us-container .content-container article, .content-container .why-us-container article, .Subscription-container .content-container article, .content-container .Subscription-container article {
   font-size: 1.6rem;
@@ -72,9 +68,9 @@ html {
   margin: 10px;
 }
 .Subscription-container p, .why-us-container p {
-  font-weight: 700;
+  font-weight: bold;
   font-size: 1.5rem;
-  color: #e5eff5;
+  color: #a6ebed;
   padding-bottom: 20px;
   margin: 5px;
   padding-left: 10px;
@@ -84,12 +80,13 @@ html {
   color: #e5eff5;
 }
 .Subscription-container .price-frase, .why-us-container .price-frase {
-  color: #98a6bd;
+  color: #e5eff5;
+  font-weight: bold;
 }
 .Subscription-container .button-p, .why-us-container .button-p {
   font-size: 1.6rem;
   background-color: #c0df34;
-  width: 40vw;
+  width: 55vw;
   padding: 15px;
   color: white;
   margin: 0 auto;
@@ -99,11 +96,16 @@ html {
   transform: scale(1.1);
 }
 
-.Why-Us-section {
-  padding: 20px;
+.why-us-container {
+  background-color: #4abebd;
 }
-
 .why-us-container article {
   margin: 10px;
-  color: white;
+  color: #a6ebed;
+}
+
+footer {
+  padding: 30px;
+  margin-top: 20px;
+  font-size: 1.4rem;
 }
