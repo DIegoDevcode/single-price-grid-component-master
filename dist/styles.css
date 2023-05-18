@@ -14,37 +14,35 @@ body {
 
 @media only screen and (min-width: 180px) and (max-width: 680px) {
   .content-container {
-    width: 74%;
+    width: 75.7%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
-    height: 120px;
-    padding-bottom: 90px;
+    padding-bottom: 40px;
     padding-top: 10px;
     background-color: white;
-    border-radius: 20px;
   }
   .content-container h2 {
     font-size: 1.6rem;
     color: #2ab2af;
-    padding: 7px;
+    margin-left: 10px;
   }
   .content-container h3 {
     font-size: 1.6rem;
     color: #c0df34;
-    padding: 7px;
+    margin-left: 10px;
   }
   .content-container article {
     color: #98a6bd;
     font-size: 1.6rem;
     font-weight: 700;
     line-height: 1.4;
+    margin-left: 10px;
   }
 
   .Subscription-container {
-    height: 220px;
     width: 75%;
     margin: 0 auto;
     display: flex;
@@ -89,7 +87,6 @@ body {
   }
 
   .why-us-container {
-    height: 380px;
     width: 75%;
     margin: 0 auto;
     display: flex;
@@ -106,7 +103,7 @@ body {
   }
   .why-us-container article {
     font-weight: 700;
-    line-height: 1.1;
+    line-height: 0.7;
     margin: 10px;
     color: #a6ebed;
     font-size: 1.7rem;
@@ -116,6 +113,10 @@ body {
     padding: 30px;
     margin-top: 20px;
     font-size: 1.4rem;
+  }
+
+  .attribution {
+    font-size: 16px;
   }
 }
 @media only screen and (min-width: 680px) and (max-width: 1920px) {
