@@ -9,6 +9,7 @@ html {
 
 body {
   font-family: "Karla", sans-serif;
+  background-color: #D3DEEF;
 }
 
 @media only screen and (min-width: 180px) and (max-width: 680px) {
@@ -24,7 +25,6 @@ body {
     padding-top: 10px;
     background-color: white;
     border-radius: 20px;
-    box-shadow: 20px;
   }
   .content-container h2 {
     font-size: 1.6rem;
@@ -120,47 +120,44 @@ body {
 }
 @media only screen and (min-width: 680px) and (max-width: 1920px) {
   .content-container {
-    width: 50%;
+    width: 40%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     height: 120px;
-    padding-bottom: 90px;
+    padding-bottom: 30px;
     padding-top: 10px;
     background-color: white;
-    border-radius: 20px;
-    box-shadow: 20px;
   }
   .content-container h2 {
     font-size: 1.6rem;
     color: #2ab2af;
     padding: 7px;
-    padding-left: 3px;
+    margin-left: 29px;
   }
   .content-container h3 {
     font-size: 1.6rem;
     color: #c0df34;
-    padding: 2px;
-    padding-left: 3px;
+    margin-left: 33px;
   }
   .content-container article {
     color: #98a6bd;
     font-size: 1.6rem;
     font-weight: 700;
-    line-height: 1.4;
+    line-height: 0.9;
+    margin-left: 35px;
   }
 
   .wrapper {
     display: grid;
     grid-template-columns: 50% 50%;
-    column-gap: 2px;
   }
 
   .Subscription-container {
     height: 230px;
-    width: 50%;
+    width: 40%;
     display: flex;
     margin-left: auto;
     flex-direction: column;
@@ -172,7 +169,8 @@ body {
     font-size: 1.6rem;
     color: #e5eff5;
     padding-top: 10px;
-    margin: 10px;
+    margin: 5px;
+    margin-left: 35.7px;
   }
   .Subscription-container p {
     font-weight: bold;
@@ -180,7 +178,7 @@ body {
     color: #a6ebed;
     padding-bottom: 20px;
     margin: 5px;
-    padding-left: 10px;
+    margin-left: 35.7px;
   }
   .Subscription-container .price {
     font-size: 2.2rem;
@@ -190,10 +188,13 @@ body {
     color: #e5eff5;
     font-weight: bold;
   }
+  .Subscription-container .p-info {
+    margin-left: 39.7px;
+  }
   .Subscription-container .button-p {
     font-size: 1.6rem;
     background-color: #c0df34;
-    width: 19vw;
+    width: 13vw;
     padding: 15px;
     color: white;
     margin: 0 auto;
@@ -205,10 +206,12 @@ body {
 
   .why-us-container {
     height: 230px;
-    width: 50%;
+    width: 39.6%;
     display: flex;
     flex-direction: column;
     text-align: flex-start;
+    margin-right: auto;
+    padding-right: 2px;
     background-color: #4abebd;
   }
   .why-us-container h3 {
@@ -222,6 +225,70 @@ body {
     line-height: 0.6;
     margin: 10px;
     color: #a6ebed;
-    font-size: 1.7rem;
+    font-size: 15.7px;
+  }
+
+  footer {
+    padding: 20px;
+    margin-top: 10px;
+  }
+  footer .attribution {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 680px) and (max-width: 1000px) {
+  .content-container {
+    width: 45%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 170px;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    background-color: white;
+  }
+
+  .Subscription-container {
+    height: 280px;
+    width: 45%;
+    display: flex;
+    margin-left: auto;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    background-color: #2ab2af;
+  }
+  .Subscription-container .button-p {
+    font-size: 1.6rem;
+    background-color: #c0df34;
+    width: 9vw;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    margin-left: 45px;
+  }
+  .Subscription-container .button-p:hover {
+    transform: scale(1.1);
+  }
+
+  .why-us-container {
+    height: 280px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    text-align: flex-start;
+    margin-right: auto;
+    padding-right: 2px;
+    background-color: #4abebd;
+  }
+  .why-us-container article {
+    font-weight: 700;
+    line-height: 0.7;
+    margin: 10px;
+    color: #a6ebed;
+    font-size: 15.7px;
   }
 }

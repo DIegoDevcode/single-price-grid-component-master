@@ -17,7 +17,7 @@ html {
 
 body{
    font-family: 'Karla', sans-serif;
-   //width: 100%;
+   background-color: #D3DEEF;
 }
 
 
@@ -34,8 +34,6 @@ body{
    padding-top: 10px;
    background-color: white;
    border-radius: 20px;
-   box-shadow: 20px;
-
    h2 {
       font-size: $font-size-title;
       color: $primary-Cyan;
@@ -144,49 +142,47 @@ footer {
    }
 }
 
+
 @media only screen and (min-width: 680px)and (max-width: 1920px) {
    .content-container {
-   width: 50%;
+   width: 40%;
    margin: 0 auto;
    display: flex;
    flex-direction: column;  
    justify-content: flex-start;
    align-items:  flex-start;
    height: 120px;
-   padding-bottom: 90px;
+   padding-bottom: 30px;
    padding-top: 10px;
    background-color: white;
-   border-radius: 20px;
-   box-shadow: 20px;
    h2 {
       font-size: $font-size-title;
       color: $primary-Cyan;
       padding: 7px;
-      padding-left: 3px;
+      margin-left: 29px;
    }
    h3 {
       font-size: $font-size-title;
       color: $primary-Bright-Yellow;
-      padding: 2px;
-      padding-left: 3px;
+      margin-left: 33px;
    }
    article {
       color: $neutral-Grayish-Blue;
       font-size: 1.6rem;
       font-weight: 700;
-      line-height: 1.4;
+      line-height: 0.9;
+      margin-left: 35px;
    }
 }
 
 .wrapper {
    display: grid;
    grid-template-columns: 50% 50%;
-   column-gap: 2px;
 }
 
 .Subscription-container{
    height: 230px;
-   width: 50%;
+   width: 40%;
    display: flex;
    margin-left: auto; 
    flex-direction: column;
@@ -197,7 +193,8 @@ footer {
       font-size: $font-size-title;
       color: $neutral-Light-Gray;
       padding-top: 10px;
-      margin: 10px;
+      margin: 5px;
+      margin-left: 35.7px;
    }
 
    p {
@@ -206,7 +203,7 @@ footer {
       color: $color-text-secondary;
       padding-bottom: 20px;
       margin: 5px;
-      padding-left: 10px;
+      margin-left:  35.7px;
    }
 
    .price {
@@ -219,10 +216,14 @@ footer {
       font-weight: bold;
    }
 
+   .p-info{
+      margin-left: 39.7px;
+   }
+
    .button-p {
       font-size: 1.6rem;
       background-color: $primary-Bright-Yellow;
-      width: 19vw;
+      width: 13vw;
       padding: 15px;
       color: white;
       margin: 0 auto;
@@ -237,10 +238,12 @@ footer {
 
 .why-us-container {
    height: 230px;
-   width: 50%;
+   width: 39.6%;
    display: flex;
    flex-direction: column;
    text-align: flex-start;
+   margin-right: auto; 
+   padding-right: 2px;
    background-color: $background-color-secondary;
 
    h3 {
@@ -255,7 +258,72 @@ footer {
       line-height: 0.6;
       margin: 10px;
       color: $color-text-secondary;
-      font-size: 1.7rem
+      font-size: 15.7px;
+   }
+}
+footer {
+   padding: 20px;
+   margin-top: 10px;
+   .attribution{
+      font-size: 16px;
+   }
+   }
+}
+
+@media only screen and (min-width: 680px)and (max-width: 1000px){
+   .content-container {
+      width: 45%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;  
+      justify-content: flex-start;
+      align-items:  flex-start;
+      height: 170px;
+      padding-bottom: 30px;
+      padding-top: 10px;
+      background-color: white;
+}
+.Subscription-container{
+   height: 280px;
+   width: 45%;
+   display: flex;
+   margin-left: auto; 
+   flex-direction: column;
+   justify-content: left;
+   align-items:  left;
+   text-align: left;
+   background-color: $primary-Cyan;
+   
+   .button-p {
+      font-size: 1.6rem;
+      background-color: $primary-Bright-Yellow;
+      width: 9vw;
+      padding: 15px;
+      color: white;
+      text-align: center;
+      margin-left: 45px;
+   
+      &:hover {
+         transform: scale(1.1);
+      }
+   }
+}
+
+.why-us-container {
+   height: 280px;
+   width: 45%;
+   display: flex;
+   flex-direction: column;
+   text-align: flex-start;
+   margin-right: auto; 
+   padding-right: 2px;
+   background-color: $background-color-secondary;
+   article {
+      font-weight: 700;
+      line-height: 0.7;
+      margin: 10px;
+      color: $color-text-secondary;
+      font-size: 15.7px;
    }
 }
 }
